@@ -530,6 +530,15 @@ section, footer {
   transform: translateX(-50%);
 }
 
+.shop-right-item:first-child img.item {
+  max-width: 110px;
+  top: 90px;
+}
+
+.shop-right-item:last-child img.item {
+  top: 10px;
+}
+
 .call {
   background-color: #FED450;
 }
