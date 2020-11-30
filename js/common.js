@@ -38,4 +38,25 @@ jQuery(document).ready(function () {
     jQuery('.popup').fadeOut(200);
   });
 
+
+  if (jQuery(window).width() < 992) {
+    jQuery(".header__menu ul li a").click(function () {
+      var elementClick = jQuery(this).attr("href");
+      var destination = jQuery(elementClick).offset().top - 110;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 300);
+      jQuery('.header__menu').slideUp(200);
+      jQuery('.burger').removeClass('burger-active');
+      return false;
+    });
+
+  } else {
+    jQuery(".header__menu ul li a").click(function () {
+      var elementClick = jQuery(this).attr("href");
+      var destination = jQuery(elementClick).offset().top - 110;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 300);
+      return false;
+    });
+  }
+ 
+
 });
