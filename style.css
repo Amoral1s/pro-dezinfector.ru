@@ -1209,6 +1209,10 @@ section, footer {
   .offer .container p {
     font-size: 20px;
   }
+  .popup {
+    padding: 40px 25px;
+    max-width: calc(100% - 40px);
+  }
 }
 
 @media (max-width: 440px) {
