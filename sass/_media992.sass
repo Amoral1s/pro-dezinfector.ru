@@ -1,0 +1,156 @@
+@media (max-width: 992px)
+  .places-wrap-item
+    width: 100%
+  .iphone img
+    right: -300px
+    top: -220px
+  .colors-wrap img
+    max-width: 400px
+  .pdf .container img
+    display: none
+  .pdf
+    height: auto
+    .container
+      display: flex
+      flex-direction: column
+      align-items: center
+      h2
+        max-width: 100%
+        text-align: center
+  .shop
+    &-left
+      ul
+        li
+          font-size: 14px
+          margin-bottom: 10px
+          height: 20px
+    &-right
+      position: relative
+      padding-left: 30px
+      padding-right: 30px
+      .slick-arrow
+        font-size: 0
+        height: 30px
+        width: 20px
+        background-color: #ffffff
+        padding: 0
+        appearance: none
+        -webkit-appearance: none
+        -moz-appearance: none
+        margin: 0
+        box-shadow: none
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: contain
+      .slick-prev
+        left: 0
+        background-image: url(img/icons/prev.svg)
+      .slick-next
+        right: 0
+        background-image: url(img/icons/next.svg)
+      &-item
+        padding-top: 0px
+        img.item
+          max-height: 400px
+        &__text
+          padding-top: 420px
+          ul
+            li
+              font-size: 14px
+              margin-bottom: 10px
+              height: 20px
+              img
+                height: 20px
+                width: 20px
+  .shop
+    margin-bottom: 50px
+  .call
+    &-left
+      display: none
+    &-right
+      width: 100%
+  .footer
+    &-top
+      .container
+        flex-direction: column
+        align-items: center 
+        padding-top: 50px
+        padding-bottom: 50px
+        div, a, p
+          text-align: center
+          margin-bottom: 15px
+        .social
+          margin-bottom: 0
+  .offer
+    margin-top: calc(40px + 30px)
+  .header
+    padding-top: 15px
+    padding-bottom: 15px
+    z-index: 50
+    &__logo
+      z-index: 70
+      img
+        max-height: 40px
+        object-fit: contain
+    .container
+      max-width: 100%
+      padding-left: 20px
+      padding-right: 20px
+    &__callback
+      display: none
+    .burger
+      display: block
+      z-index: 70
+      height: 40px
+      width: 40px
+      position: relative
+      span
+        transition: 0.3s
+        background-color: $main
+        height: 5px
+        width: 100%
+        display: block
+        position: absolute
+        top: 7px
+        &:nth-child(2)
+          top: 17px
+        &:nth-child(3)
+          top: 27px
+      
+      &-active
+        span
+          transition: 0.3s
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) rotate(45deg)
+          top: 50%
+          &:nth-child(2)
+            left: 50%
+            transform: translate(-50%, -50%) rotate(-45deg)
+            top: 50%
+          &:nth-child(3)
+            left: 50%
+            transform: translate(-50%, -50%) rotate(135deg)
+            top: 50%
+    &__menu
+      position: fixed
+      background-color: #fff
+      z-index: 60
+      top: 70px
+      left: -5px
+      right: 0
+      width: calc(100% + 10px)
+      padding: 40px
+      box-shadow: 0 0 4px rgba(#000, .2)
+      display: none
+      .button
+        display: flex
+      ul
+        display: block
+        li
+          margin-bottom: 30px
+          a
+            font-size: 20px
