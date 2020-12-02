@@ -532,11 +532,11 @@ section, footer {
 
 .shop-right-item:first-child img.item {
   max-width: 110px;
-  top: 90px;
+  top: 96px;
 }
 
 .shop-right-item:last-child img.item {
-  top: 10px;
+  top: 5px;
 }
 
 .call {
